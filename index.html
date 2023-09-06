@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" sizes="70x70" href="images/icons/favicon70.png">
+    <link rel="icon" type="image/png" sizes="144x144" href="images/icons/favicon144.png">
+    <link rel="icon" type="image/png" sizes="150x150" href="images/icons/favicon150.png">
+    <link rel="icon" type="image/png" sizes="310x310" href="images/icons/favicon310.png">
+    <title>Portfolio</title>
+    <script type="text/javascript" src="js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.6.1.min.map"></script>
+	  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css.map">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="grid" viewBox="0 0 16 16">
+    <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+    <symbol id="me" x="0px" y="0px" viewBox="0 0 128 128">
+    <path d="M 56 21.900391 C 43.3 21.900391 33 32.200391 33 44.900391 C 33 46.600391 34.3 47.900391 36 47.900391 L 41.199219 47.900391 L 41.400391 47.900391 C 52.900391 47.900391 64.6 47.900391 73 40.400391 L 73 40.5 C 73.4 40.1 73.799609 39.800391 74.099609 39.400391 C 75.199609 38.200391 77.100781 37.999609 78.300781 39.099609 C 79.600781 40.199609 79.7 42.2 78.5 43.5 L 77.099609 44.900391 C 75.799609 46.200391 76.3 48.399609 78 49.099609 C 79 49.499609 80.099219 49.700781 81.199219 49.800781 C 82.699219 50.000781 83.900391 51.200781 83.900391 52.800781 L 83.900391 59.599609 C 84.000391 70.099609 76.000391 79.2 65.400391 80 C 53.800391 80.8 44.1 71.599609 44 60.099609 C 44 58.499609 42.799219 57.1 41.199219 57 C 39.499219 56.9 38 58.3 38 60 C 38 74.3 49.7 86 64 86 C 77.9 86 89.3 75.100781 90 61.300781 L 90 61 L 90 47 L 90 44 L 90 43 C 90 35.8 84.599609 29.899609 77.599609 29.099609 L 77.199219 28.5 C 74.299219 24.4 69.5 21.900391 64.5 21.900391 L 56 21.900391 z M 64 91 C 47.6 91 32.400781 99.899609 24.300781 114.09961 C 23.500781 115.49961 24.000391 117.39922 25.400391 118.19922 C 25.900391 118.49922 26.400391 118.59961 26.900391 118.59961 C 27.900391 118.59961 29 118.09961 29.5 117.09961 C 36.6 104.69961 49.8 97 64 97 C 78.2 97 91.4 104.69961 98.5 117.09961 C 99.3 118.49961 101.19961 118.99922 102.59961 118.19922 C 103.99961 117.39922 104.49922 115.49961 103.69922 114.09961 C 95.599219 99.899609 80.4 91 64 91 z"></path>
+  </symbol>
+  <symbol id="logo" x="0px" y="0px" viewBox="0 0 128 128">
+    <path d="M104 31H24c-7.2 0-13 5.8-13 13v32 5 23c0 7.2 5.8 13 13 13h80c7.2 0 13-5.8 13-13V81v-5V44C117 36.8 111.2 31 104 31zM109.4 67C95.1 74.2 79.6 77.9 64 77.9S32.9 74.2 18.6 67c-1-.5-1.6-1.5-1.6-2.7 0-2.2 2.4-3.7 4.4-2.6 26.8 13.6 58.4 13.6 85.2 0 2-1 4.4.4 4.4 2.6C111 65.4 110.4 66.5 109.4 67zM82 27c-1.7 0-3-1.3-3-3 0-3.9-3.1-7-7-7H56c-3.9 0-7 3.1-7 7 0 1.7-1.3 3-3 3s-3-1.3-3-3c0-7.2 5.8-13 13-13h16c7.2 0 13 5.8 13 13C85 25.7 83.7 27 82 27z"></path>
+  </symbol>
+  <symbol id="links" x="0px" y="0px" viewBox="0 0 128 128">
+<path d="M 84 11 C 82.3 11 81 12.3 81 14 C 81 15.7 82.3 17 84 17 L 106.80078 17 L 60.400391 63.400391 C 59.200391 64.600391 59.200391 66.499609 60.400391 67.599609 C 61.000391 68.199609 61.8 68.5 62.5 68.5 C 63.2 68.5 63.999609 68.199609 64.599609 67.599609 L 111 21.199219 L 111 44 C 111 45.7 112.3 47 114 47 C 115.7 47 117 45.7 117 44 L 117 14 C 117 12.3 115.7 11 114 11 L 84 11 z M 24 31 C 16.8 31 11 36.8 11 44 L 11 104 C 11 111.2 16.8 117 24 117 L 84 117 C 91.2 117 97 111.2 97 104 L 97 59 C 97 57.3 95.7 56 94 56 C 92.3 56 91 57.3 91 59 L 91 104 C 91 107.9 87.9 111 84 111 L 24 111 C 20.1 111 17 107.9 17 104 L 17 44 C 17 40.1 20.1 37 24 37 L 69 37 C 70.7 37 72 35.7 72 34 C 72 32.3 70.7 31 69 31 L 24 31 z"></path>
+</symbol>
+
+<symbol id="github" x="0px" y="0px" viewBox="0 0 512.000000 512.000000">
+  <g class="shadow" transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
+<path  d="M595 5109 c-151 -22 -270 -84 -386 -199 -69 -68 -94 -102 -127 -170 -84 -171 -77 29 -77 -2180 0 -2210 -7 -2010 77 -2180 60 -120 178 -238 298 -298 170 -84 -30 -77 2180 -77 2210 0 2010 -7 2180 77 120 60 238 178 298 298 84 170 77 -30 77 2180 0 2210 7 2010 -77 2180 -60 121 -179 240 -298 298 -172 84 35 77 -2145 78 -1072 1 -1967 -2 -2000 -7z m2214 -1035 c498 -74 940 -388 1174 -834 64 -122 116 -265 149 -412 20 -90 23 -129 23 -308 -1 -231 -15 -323 -81 -511 -146 -421 -474 -764 -894 -936 -122 -50 -175 -55 -208 -20 -20 21 -21 34 -24 312 -4 317 -7 331 -68 420 -17 25 -29 45 -27 45 3 0 44 7 93 15 228 39 385 122 485 256 55 72 74 111 105 216 24 79 27 105 28 248 1 197 -16 263 -98 384 l-54 79 15 63 c18 77 13 197 -12 287 l-18 62 -47 0 c-25 0 -71 -7 -101 -16 -58 -17 -189 -81 -249 -120 l-37 -25 -104 22 c-150 33 -447 33 -597 1 l-103 -23 -58 36 c-129 78 -255 125 -338 125 l-42 0 -21 -67 c-26 -82 -30 -233 -7 -304 l14 -45 -34 -40 c-91 -104 -139 -270 -128 -445 22 -376 192 -592 530 -674 55 -13 121 -26 147 -30 l48 -6 -30 -38 c-32 -39 -70 -127 -70 -160 0 -27 -96 -55 -190 -55 -116 0 -202 48 -272 153 -69 103 -131 150 -222 171 -51 11 -96 0 -96 -24 0 -8 17 -28 37 -43 87 -65 141 -130 187 -227 55 -115 102 -166 194 -209 65 -31 71 -32 208 -32 l142 0 5 -130 c3 -94 1 -139 -9 -162 -24 -59 -88 -58 -233 5 -484 210 -821 619 -933 1136 -19 86 -22 132 -22 311 0 195 2 218 28 330 193 823 970 1344 1815 1219z"/>
+</g>
+</symbol>
+<symbol id="linkedin" x="0px" y="0px" viewBox="0 0 50 50">
+ <g stroke="none">
+<path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+</symbol>
+<symbol id="projects-icon" x="0px" y="0px" viewBox="0 0 128 128">
+  <path d="M114,1H64c-1.7,0-3,1.3-3,3v14.4c0,2.2,1.2,4.2,3,5.2c1.9,1.1,4.1,1.1,5.9,0c1.8-1.1,3.9-1.6,6-1.6c3.3,0,6.4,1.3,8.7,3.7 c2.3,2.4,3.5,5.5,3.3,8.9c-0.3,6.2-5.4,11.2-11.5,11.4c-2.3,0.1-4.5-0.5-6.5-1.6c-1.8-1.1-4.1-1.1-5.9,0c-1.9,1.1-3,3.1-3,5.2V61 l-11.5,0.1c1.7-2.9,2.6-6.3,2.4-9.8c-0.4-9.2-7.9-16.8-17.1-17.3c-5-0.2-9.7,1.5-13.3,4.9C18,42.4,16,47,16,52c0,3.2,0.8,6.3,2.4,9 H4c-1.7,0-3,1.3-3,3v50c0,7.2,5.8,13,13,13h50c1.7,0,3-1.3,3-3v-14.4c0-2.2-1.2-4.2-3-5.2c-1.9-1.1-4.1-1.1-5.9,0 c-1.8,1.1-3.9,1.6-6,1.6c-3.3,0-6.4-1.3-8.7-3.7c-2.3-2.4-3.5-5.5-3.3-8.9c0.3-6.2,5.4-11.2,11.5-11.4c2.3-0.1,4.5,0.5,6.5,1.6 c1.8,1.1,4.1,1.1,5.9,0c1.9-1.1,3-3.1,3-5.2V67l11.5,0c-1.7,3-2.6,6.3-2.4,9.8c0.4,9.2,7.9,16.8,17.1,17.3c5,0.2,9.7-1.5,13.3-4.9 c3.6-3.4,5.6-8.1,5.6-13c0-3.2-0.8-6.3-2.4-9H121v47c0,3.9-3.1,7-7,7H84c-1.7,0-3,1.3-3,3s1.3,3,3,3h30c7.2,0,13-5.8,13-13V14 C127,6.8,121.2,1,114,1z M51.3,76c-9.2,0.4-16.8,7.9-17.3,17.1c-0.2,5,1.5,9.7,4.9,13.3c3.4,3.6,8.1,5.6,13,5.6 c3.2,0,6.3-0.8,9-2.4V121H14c-3.9,0-7-3.1-7-7V67h11.4c2.2,0,4.2-1.2,5.2-3s1.1-4.1,0-5.9c-1.1-1.8-1.6-3.9-1.6-6 c0-3.3,1.3-6.4,3.7-8.7c2.4-2.3,5.6-3.5,8.9-3.3c6.2,0.3,11.2,5.4,11.4,11.5c0.1,2.3-0.5,4.5-1.6,6.5c-1.1,1.8-1.1,4.1,0,5.9 s3.1,3,5.2,3H61l0,11.5C58.1,76.7,54.7,75.9,51.3,76z M121,61h-11.4c-2.2,0-4.2,1.2-5.2,3c-1.1,1.9-1.1,4.1,0,5.9 c1.1,1.8,1.6,3.9,1.6,6c0,3.3-1.3,6.4-3.7,8.7c-2.4,2.3-5.6,3.5-8.9,3.3c-6.2-0.3-11.2-5.4-11.4-11.5c-0.1-2.3,0.5-4.5,1.6-6.5 c1.1-1.8,1.1-4.1,0-5.9c-1.1-1.9-3.1-3-5.2-3H67l0-11.5c2.9,1.7,6.3,2.6,9.8,2.4c9.2-0.4,16.8-7.9,17.3-17.1 c0.2-5-1.5-9.7-4.9-13.3C85.6,18,81,16,76,16c-3.2,0-6.3,0.8-9,2.4V7h47c3.9,0,7,3.1,7,7V61z"></path>
+</symbol>
+</svg>
+
+<div class="container-fluid p-0 d-lg-none d-block">
+  <nav class="navbar navbar-expand bg-light p-0">
+  <div class="container-fluid">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-center vw-100 my-2">
+        <li class="nav-item w-100 border-end">
+          <a href="index.html" class="d-block p-3 link-dark text-decoration-none text-center" title="Portfolio" data-bs-toggle="tooltip" data-bs-placement="right">
+            <svg class="bi" width="40" height="32"><use xlink:href="#logo"/></svg>
+            <span class="visually-hidden">Icon</span>
+          </a>
+        </li>
+        <li class="nav-item w-100 border-end">
+        <a id="menu-main" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-label="Slide 1" aria-current="true" href="#" class="text-center nav-link py-3" title="Me" data-bs-toggle="tooltip" data-bs-placement="right">
+          <svg class="bi" width="35" height="35" role="img" aria-label="Me"><use xlink:href="#me"/></svg>
+        </a>
+      </li>
+        <li class="nav-item w-100 border-end">
+          <a id="menu-skills" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" href="#" class="text-center nav-link py-3" title="My Skills" data-bs-toggle="tooltip" data-bs-placement="right">
+          <svg class="bi" width="24" height="24" role="img" aria-label="Skills"><use xlink:href="#grid"/></svg>
+        </a>
+        </li>
+        <li class="nav-item w-100 border-end">
+          <a id="menu-projects" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" href="#" class="text-center nav-link py-3" title="Selected Projects" data-bs-toggle="tooltip" data-bs-placement="right">
+            <svg class="bi" width="24" height="24" role="img" aria-label="Projects"><use xlink:href="#projects-icon"/></svg>
+          </a>
+        </li>
+        <li class="nav-item w-100">
+          <a id="menu-link" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4" href="#" class="text-center nav-link py-3" title="Get in touch!" data-bs-toggle="tooltip" data-bs-placement="right">
+            <svg class="bi" width="24" height="24" role="img" aria-label="Get in touch!"><use xlink:href="#links"/></svg>
+          </a>
+        </li>
+      </ul>
+  </div>
+</nav>
+</div>
+
+<main class="d-flex d-block">
+<!---------------------------------------------- sidebar -------------------------------------------------------------------------------->
+      <div class="shadow-lg flex-column flex-shrink-0 bg-light d-none d-lg-block" style="width: 4.5rem;">
+    <a href="index.html" class="d-block p-3 link-dark text-decoration-none" title="Portfolio" data-bs-toggle="tooltip" data-bs-placement="right">
+      <svg class="bi" width="40" height="32"><use xlink:href="#logo"/></svg>
+      <span class="visually-hidden">Icon</span>
+    </a>
+    <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+      <li>
+        <a id="menu-main" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-label="Slide 1" aria-current="true" href="#" class="nav-link active py-3 border-bottom" title="Me" data-bs-toggle="tooltip" data-bs-placement="right">
+          <svg class="bi" width="35" height="35" role="img" aria-label="Me"><use xlink:href="#me"/></svg>
+        </a>
+      </li>
+
+      <li>
+        <a id="menu-skills" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" href="#" class="nav-link py-3 border-bottom" title="My Skills" data-bs-toggle="tooltip" data-bs-placement="right">
+          <svg class="bi" width="24" height="24" role="img" aria-label="Skills"><use xlink:href="#grid"/></svg>
+        </a>
+      </li>
+
+      <li>
+        <a id="menu-projects" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" href="#" class="nav-link py-3 border-bottom" title="Selected Projects" data-bs-toggle="tooltip" data-bs-placement="right">
+          <svg class="bi" width="24" height="24" role="img" aria-label="Projects"><use xlink:href="#projects-icon"/></svg>
+        </a>
+      </li>
+
+       <li>
+        <a id="menu-link" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4" href="#" class="nav-link py-3 border-bottom" title="Get in touch!" data-bs-toggle="tooltip" data-bs-placement="right">
+          <svg class="bi" width="24" height="24" role="img" aria-label="Get in touch!"><use xlink:href="#links"/></svg>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+<!---------------------------------------------- sidebar -------------------------------------------------------------------------------->
+
+<!--------------------------------------------  Carousel -------------------------------------------------->
+    <div id="second-content" class="flex-column" style="width: 100%; height: 100%;">
+    <div id="myCarousel" class="carousel slide carousel-fade carousel-main" data-bs-ride="carousel">
+    <div class="carousel-indicators rounded" style="color:transparent;">
+      <button id="main" type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-label="Slide 1" class="active carousel-button" aria-current="true"></button>
+      <button class="carousel-button" id="skills" type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button class="carousel-button" id="projects" type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button class="carousel-button" id="link" type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+
+    <div class="carousel-inner">
+<!---------------------------------------------------------------- Home ------------------------------------------------------------------>
+      <div  class="carousel-item active">
+        <img id="main-background" class="background-image" width="100%" height="103%" src="images/Web_UI.png">
+
+        <div class="container">
+
+          <div class="carousel-caption mb-3">
+            <h1>Hi, I'm Rafael!</h1>
+            <p>An informatic systems engineering student and graphic designer.
+            Explore this portofolio to get insights about me!</p>
+            <a id="touch" class="btn btn-lg btn-dark" data-bs-target="#myCarousel" data-bs-slide-to="3">Get in touch!</a>
+          </div>
+
+        </div>
+
+      </div>
+<!---------------------------------------------------------------- Home ------------------------------------------------------------------>
+
+<!---------------------------------------------------------------- Skills ---------------------------------------------------------------->
+      <div id="third-slide" class="carousel-item" style="width: 100%;">
+        <img id="skills-background" class="position-absolute top-100 start-100 translate-middle background-image" height="500%" src="images/background_2.png">
+        <img id="skills-showcase" class="position-absolute top-50 start-50 translate-middle d-none d-lg-block" width="80%" height="100%" src="images/skills_showcase.png" style="position: absolute;">
+        <img id="skills-mobile" class="position-absolute top-50 start-50 translate-middle d-block d-lg-none" src="images/mobile/skills.png">
+        <div class="container content justify-content-center d-block d-lg-none">
+
+    </div>
+      </div>
+<!---------------------------------------------------------------- Skills ---------------------------------------------------------------->
+
+<!---------------------------------------------------------------- Projects ---------------------------------------------------------------->
+      <div id="projects-content" class="carousel-item">
+        <img id="projects-background" class="background-image" width="100%" height="100%" src="images/projects_UI.png" style="position: absolute;">
+        <!-- <img id="projects-showcase" class="position-absolute top-50 start-50 translate-middle d-block d-xl-none" src="images/mobile/projects.png" style="position: absolute;"> -->
+        <div class="d-flex d-xl-none justify-content-center vw-100 vh-100">
+        <a href="html/py.html"><img class="projects-showcase position-absolute top-50 start-0 translate-middle-y d-block d-xl-none" src="images/projects/python_button.png"></a>
+        <a href="html/spring.html"><img class="projects-showcase position-absolute top-50 start-50 translate-middle-y d-block d-xl-none" src="images/projects/spring_button.png"></a>
+        <a href="html/php.html"><img class="float-end projects-showcase position-absolute top-50 start-50 translate-middle d-block d-xl-none" src="images/projects/php_button.png"></a>
+      </div>
+        
+        <div class="container content justify-content-center">
+
+    <div class="row w-100 row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+      <div class="col d-none d-xl-block">
+        <a id="project-python" href="html/py.html">
+        <div class="d-flex flex-column card card-cover card-hover h-100 " style="background-image: url('images/projects/python_button.png'); background-color: transparent; border-color: transparent;"></div>
+      </a>
+      </div>
+
+      <div class="col d-none d-xl-block">
+        <a id="project-php" href="html/php.html">
+        <div class="d-flex flex-column card card-cover card-hover h-100" style="background-image: url('images/projects/php_button.png'); background-color: transparent; border-color: transparent;"></div>
+      </a>
+      </div>
+
+      <div class="col d-none d-xl-block">
+        <a id="project-spring" href="html/spring.html">
+        <div class="card card-cover card-hover h-100" style="background-image: url('images/projects/spring_button.png'); background-color: transparent; border-color: transparent; min-height: 428.39px; min-width:353.6;">
+        </div>
+      </a>
+      </div>
+    </div>
+
+      <div class="carousel-caption">
+            <h1>Selected Projects</h1>
+            <p>You can check my projects more in detail at my github profile!</p>
+            <p><a class="btn btn-lg btn-dark" href="https://github.com/Ginazai?tab=repositories">Go!</a></p>
+          </div>
+    </div>
+  </div>
+<!---------------------------------------------------------------- Projects ---------------------------------------------------------------->
+
+<!---------------------------------------------------------------- Contact ---------------------------------------------------------------->
+      <div class="carousel-item" style="width: 100%;">
+        <img id="contact-background" class="background-image" height="105%" src="images/Contact_UI.png" style="position: absolute;">
+        <div class="container content justify-content-center">
+          <div class="row">
+
+          
+            <div class="col-lg-12 p-3">
+              <div class="card shadow-sm text-center">
+                <div class="card-header">Contact Information</div>
+              <div class="card-body">
+               <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><b>E-mail address:</b><a href="mailto:rafaeldc1300@gmail.com"> rafaeldc1300@gmail.com</a></li>
+                  <li class="list-group-item"><b>Phone number:</b><a href="tel:50765420323"> +507 6542-0323</a></li>
+                </ul>
+            </div>
+          </div>
+          </div>
+
+       
+        
+          <div class="col-lg-6 p-3">
+            <div class="card card-hover card-shadow">
+
+              <svg class="card-img-top p-3" width="250" height="250" role="img" aria-label="Github"><use xlink:href="#github"/></svg>
+
+              <div class="card-body text-center">
+                 <h5 class="card-title">Github</h5>
+                <p class="card-text">Check my work at my Github profile!</p>
+                <a href="https://github.com/Ginazai" class="btn btn-dark" style="width: 100px;">Go!</a> 
+              </div>
+            </div>
+          </div>
+        
+
+            <div class="col-lg-6 p-3">
+            <div class="card card-hover card-shadow">
+
+              <svg class="card-img-top p-3" width="250" height="250" role="img" aria-label="linkedin"><use xlink:href="#linkedin"/></svg>
+
+              <div class="card-body text-center">
+                <h5 class="card-title">LinkedIn</h5>
+                <p class="card-text">Connect with me professionaly at my LinkedIn!</p>
+                <a href="https://www.linkedin.com/in/rafael-david-caballero-jir%C3%B3n-ba226323a/" class="btn btn-dark" style="width: 100px;">Go!</a>
+              </div>
+            </div>
+          </div>
+          
+
+        </div>
+      </div>
+      </div>
+<!---------------------------------------------------------------- Contact ---------------------------------------------------------------->
+
+    </div>
+    <button class="carousel-control-prev d-none d-xl-block" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    </button>
+    <button class="carousel-control-next d-none d-xl-block" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    </button>
+  </div>
+  </div>
+
+<!--------------------------------------------  Carousel -------------------------------------------------->
+</main>
+    <script type="text/javascript" src="js/popper.js"></script>
+    <script type="text/javascript" src="js/popper.js.map"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js.map"></script>
+  <!-- my resources -->
+  <link rel="stylesheet" type="text/css" href="css/carousel-transition.css">
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
