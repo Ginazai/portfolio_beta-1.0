@@ -11,7 +11,8 @@ var myCarousel = $('#myCarousel');
 const carousel = new bootstrap.Carousel(myCarousel, {
   interval: 2000,
   wrap: false,
-  ride: false
+  ride: false,
+  keyboard: true
 });
 
 function submenuControl(object) {
@@ -29,39 +30,16 @@ function submenuControl(object) {
 submenuControl('.nav-link');
 submenuControl('.carousel-indicators');
 
-function resizing(elem) {
-  if ($(window).width() <= 1200) {
-      $(elem).removeClass('container');
-      $(elem).addClass('container-fluid');
-    } else if ($(window).width() > 1200) {
-      $(elem).removeClass('container-fluid');
-      $(elem).addClass('container');
-    }
-}
 
-$(window).on('resize', function() {
-  resizing('#spring-carousel');
-  resizing('#py-carousel');
-  resizing('#php-carousel');
-});
 
-// $(window).on('resize', function() {
-//     if ($(window).height() >= 755) {
-//       console.log($(window).height());
-//       $('.carousel-caption').addClass('text-dark');
-//     } else {$('.carousel-caption').addClass('text-white');} 
-//   });
+  //document ready
 
-$(window).on('resize', function() {
-  console.log($(window).width());
+$(document).ready(function() {
+
   if ($(window).width() <= 1300) {
-    console.log($(window).width());
     $('#spring-center').addClass('position-absolute top-50 start-50 translate-middle');
   } else {$('#spring-center').removeClass('position-absolute top-50 start-50 translate-middle');}
-  
-});
 
-$(window).on('resize', function() {
   if ($(window).width() <= 980) {
     $('#home-slide').addClass('h-50');
     $('#main-caption').addClass('position-aboluste bottom-0 start-50 translate-middle');
@@ -69,12 +47,6 @@ $(window).on('resize', function() {
       $('#home-slide').removeClass('h-50');
       $('#main-caption').removeClass('position-aboluste bottom-0 start-50 translate-middle');
     }
-});
-
-
-  //document ready
-
-$(document).ready(function() {
 
   src_list = ['images/buttons/bt_button.png',
     'images/buttons/html_button.png',
@@ -115,11 +87,60 @@ $(document).ready(function() {
   }
 
   $('#myCarousel').on('slide.bs.carousel', function() {
-      console.log('slide');
-      synchronize('#main', '#menu-main');
-      synchronize('#projects', '#menu-projects');
-      synchronize('#skills', '#menu-skills');
-      synchronize('#link', '#menu-link');
+      setTimeout(function() {
+        synchronize('#main', '#menu-main');
+        synchronize('#projects', '#menu-projects');
+        synchronize('#skill', '#menu-skills');
+        synchronize('#link', '#menu-link');
+
+        //mobile-nav
+        synchronize('#main', '#nav-menu-main');
+        synchronize('#projects', '#nav-menu-projects');
+        synchronize('#skill', '#nav-menu-skills');
+        synchronize('#link', '#nav-menu-link');
+
+      }, 250);
+      
     });
+
+  function resizing(elem) {
+  if ($(window).width() <= 1200) {
+      $(elem).removeClass('container');
+      $(elem).addClass('container-fluid');
+    } else if ($(window).width() > 1200) {
+      $(elem).removeClass('container-fluid');
+      $(elem).addClass('container');
+    }
+}
+
+$(window).on('resize', function() {
+  resizing('#spring-carousel');
+  resizing('#py-carousel');
+  resizing('#php-carousel');
+});
+
+// $(window).on('resize', function() {
+//     if ($(window).height() >= 755) {
+//       console.log($(window).height());
+//       $('.carousel-caption').addClass('text-dark');
+//     } else {$('.carousel-caption').addClass('text-white');} 
+//   });
+
+$(window).on('resize', function() {
+  if ($(window).width() <= 1300) {
+    $('#spring-center').addClass('position-absolute top-50 start-50 translate-middle');
+  } else {$('#spring-center').removeClass('position-absolute top-50 start-50 translate-middle');}
+  
+});
+
+$(window).on('resize', function() {
+  if ($(window).width() <= 980) {
+    $('#home-slide').addClass('h-50');
+    $('#main-caption').addClass('position-aboluste bottom-0 start-50 translate-middle');
+  } else {
+      $('#home-slide').removeClass('h-50');
+      $('#main-caption').removeClass('position-aboluste bottom-0 start-50 translate-middle');
+    }
+});
   
 });
