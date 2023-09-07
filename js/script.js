@@ -65,6 +65,19 @@ $(window).on('resize', function() {
 
 $(document).ready(function() {
 
+  src_list = ['',
+    '',
+    '',
+    '',
+    '',
+    ];
+
+  skill_counter = 0;
+  $('#skill-image').click(function() {
+    $(this).attr('src', );
+    counter += 1;
+  });
+
   // if (!$('.carousel-item').first().hasClass('active')) {
   //   setTimeout(function(){
   //     $('.carousel-item').first().addClass('active');
