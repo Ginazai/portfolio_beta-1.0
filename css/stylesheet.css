@@ -163,11 +163,6 @@ a {
   text-decoration: none;
 }
 
-#third-slide {
-  background: rgb(113,44,249);
-  background: linear-gradient(180deg, rgba(217,200,250,1) 20%, rgba(113,44,249,1) 100%);
-}
-
 .mobile-card {
   background-image: url('../images/background_2.png'); background-repeat: no-repeat;background: rgba(255, 255, 255, 0.35);
   border-radius: 16px;
@@ -260,4 +255,13 @@ a {
     width: 80%;
     height: 100%;
   }
+}
+
+@media (max-width: 991px) {
+
+  #third-slide {
+    background: rgb(113,44,249);
+    background: linear-gradient(180deg, rgba(217,200,250,1) 20%, rgba(113,44,249,1) 100%);
+  }
+
 }
