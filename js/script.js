@@ -76,17 +76,22 @@ $(window).on('resize', function() {
 
 $(document).ready(function() {
 
-  src_list = ['',
-    '',
-    '',
-    '',
-    '',
-    ];
+  src_list = ['images/buttons/bt_button.png',
+    'images/buttons/html_button.png',
+    'images/buttons/java_button.png',
+    'images/buttons/jquery_button.png',
+    'images/buttons/mysql_button.png',
+    'images/buttons/spring_button.png',
+    'images/buttons/postgres_button.png',
+    'images/buttons/php_button.png',
+    'images/buttons/python_button.png'];
 
   skill_counter = 0;
   $('#skill-image').click(function() {
-    $(this).attr('src', );
-    counter += 1;
+    $(this).attr('src', src_list[skill_counter]);
+    if (skill_counter == 8) {
+      skill_counter = 0;
+    } else {skill_counter += 1;}
   });
 
   // if (!$('.carousel-item').first().hasClass('active')) {
