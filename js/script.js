@@ -45,12 +45,21 @@ $(window).on('resize', function() {
   resizing('#php-carousel');
 });
 
+// $(window).on('resize', function() {
+//     if ($(window).height() >= 755) {
+//       console.log($(window).height());
+//       $('.carousel-caption').addClass('text-dark');
+//     } else {$('.carousel-caption').addClass('text-white');} 
+//   });
+
 $(window).on('resize', function() {
-    if ($(window).height() >= 755) {
-      console.log($(window).height());
-      $('.carousel-caption').addClass('text-dark');
-    } else {$('.carousel-caption').addClass('text-white');} 
-  });
+  console.log($(window).width());
+  if ($(window).width() <= 750) {
+    console.log($(window).width());
+    $('#main-caption').addClass('position-absolute top-50 start-50 translate-middle-x');
+  } else {$('#main-caption').removeClass('position-absolute top-50 start-50 translate-middle-x');}
+  
+});
 
   //document ready
 
