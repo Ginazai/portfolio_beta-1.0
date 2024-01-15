@@ -211,9 +211,9 @@ a {
 
 @media (max-width: 991px) {
 
-  #third-slide {
+/*  #third-slide {
     background: rgb(113,44,249);
-    background: linear-gradient(180deg, rgba(113,44,249,1) 0%, rgba(194,125,255,1) 50%, rgba(182,37,255,1) 100%);
-  }
+    background: linear-gradient(180deg, rgba(113,44,249,1) 0%, rgba(255,255,255,.9) 50%, rgba(182,37,255,1) 100%);
+  }*/
 
 }
